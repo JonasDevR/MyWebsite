@@ -99,9 +99,37 @@ p{ font-family: trebuchet MS, verdana, arial; font-size: 14px; color: #555; }
 </style>
 <script>
 $(document).ready(function(){
-    $("button").click(function(){
+    $("#tmp_blog").click(function(){
+	//alert("blog");
         $("#demo").load("tmp_blog.txt");
-	alert('oy');
+    });
+    $("#tmp_analytics").click(function(){
+	//alert("analytics");
+	$("#demo").load("tmp_analytics.txt");
+    });
+    $("#tmp_marketing").click(function(){
+	//alert("");
+	$("#demo").load("tmp_marketing.txt");
+    });
+    $("#tmp_marketingtwo").click(function(){
+	//alert("");
+	$("#demo").load("tmp_marketing2.txt");
+    });
+    $("#tmp_onlinestore").click(function(){
+	//alert("");
+	$("#demo").load("tmp_onlinestore.txt");
+    });
+    $("#tmp_portfolio").click(function(){
+	//alert("");
+	$("#demo").load("tmp_portfolio.txt");
+    });
+    $("#tmp_social").click(function(){
+	//alert("");
+	$("#demo").load("tmp_social.txt");
+    });
+    $("#tmp_webpage").click(function(){
+	//alert("");
+	$("#demo").load("tmp_webpage.txt");
     });
 });
 </script>
@@ -136,9 +164,17 @@ $(document).ready(function(){
 
 
 </div>
+<button id="tmp_analytics">Analytics</button>
+<button id="tmp_blog">Blog</button>
+<button id="tmp_marketing">Marketing</button>
+<button id="tmp_marketingtwo">Marketing 2</button>
+<button id="tmp_onlinestore">Online Store</button>
+<button id="tmp_portfolio">Portfolio</button>
+<button id="tmp_social">Social</button>
+<button id="tmp_webpage">Web Page</button>
 
-<div id="demo"><h2>Let AJAX change this text</h2></div>
-<button>Get External Content</button>
+<div id="demo"><h2 style="margin: 10px 10px; padding: 10px 10px; background-color: #AAF;">Let AJAX change this text with a sample bootstrap webpage templates from the button choices above using JQuery function.</h2></div>
+
 
 
 
