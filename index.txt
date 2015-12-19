@@ -97,14 +97,6 @@ p{ font-family: trebuchet MS, verdana, arial; font-size: 14px; color: #555; }
     }
 
 </style>
-<script>
-$(document).ready(function(){
-    $("button").click(function(){
-        $("#demo").load("tmp_blog.txt");
-	alert('oy');
-    });
-});
-</script>
 </head>
 <body>
 
@@ -137,8 +129,6 @@ $(document).ready(function(){
 
 </div>
 
-<div id="demo"><h2>Let AJAX change this text</h2></div>
-<button>Get External Content</button>
 
 
 
