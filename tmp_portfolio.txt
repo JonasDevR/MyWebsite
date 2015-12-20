@@ -1,5 +1,5 @@
-﻿<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
+﻿<nav class="navbar navbar_prt navbar-inverse">
+  <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
@@ -29,7 +29,7 @@
   </div>
 </div>
   
-<div class="container-fluid bg-3 text-center">    
+<div class="container bg-3 text-center">    
   <h3>Some of my Work</h3><br>
   <div class="row">
     <div class="col-sm-3">
@@ -51,7 +51,7 @@
   </div>
 </div><br>
 
-<div class="container-fluid bg-3 text-center">    
+<div class="container bg-3 text-center">    
   <div class="row">
     <div class="col-sm-3">
       <p>Some text..</p>
@@ -72,6 +72,6 @@
   </div>
 </div><br><br>
 
-<footer class="container-fluid text-center">
+<footer class="container text-center footer_prt">
   <p>Footer Text</p>
 </footer>

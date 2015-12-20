@@ -1,5 +1,5 @@
-﻿<nav class="navbar navbar-inverse visible-xs">
-  <div class="container-fluid">
+﻿<nav class="navbar navbar_anl navbar-inverse visible-xs">
+  <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
@@ -19,8 +19,8 @@
   </div>
 </nav>
 
-<div class="container-fluid">
-  <div class="row content">
+<div class="container">
+  <div class="row content anl">
     <div class="col-sm-3 sidenav hidden-xs">
       <h2>Logo</h2>
       <ul class="nav nav-pills nav-stacked">

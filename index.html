@@ -14,32 +14,35 @@
 <style>
 body { margin: 0px 0px; }
 h1{ font-family: trebuchet MS, verdana, arial; font-size: 32px; color: #C55; }
-p{ font-family: trebuchet MS, verdana, arial; font-size: 14px; color: #555; }
+p{ font-family: trebuchet MS, verdana, arial; font-size: 14px;  }
+/*
 .new { font-weight: bold; color: #F00; }
 .bordr {border: 1px dotted #CCC; }
 .margin {padding: 2px 2px;}
 .bg-color{ background-color: #DDD; border: 1px solid #F00;}
+*/
 
-/* Styles for Blog Grid  */
+/* Blog Template Grid  */
 /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
     .row.content {height: 1500px}
     
     /* Set gray background color and 100% height */
-    .sidenav {
+    .sidenav_blg {
       background-color: #f1f1f1;
       height: 100%;
     }
     
     /* Set black background color, white text and some padding */
-    footer {
+    .footer_blg {
       background-color: #555;
       color: white;
       padding: 15px;
+    
     }
     
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
-      .sidenav {
+      .sidenav_blg {
         height: auto;
         padding: 15px;
       }
@@ -47,25 +50,24 @@ p{ font-family: trebuchet MS, verdana, arial; font-size: 14px; color: #555; }
     }
 
 
-/* 	Portfolio Grid		*/
+/* Portfolio Template Grid		*/
 /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .prt-navbar {
+    .navbar_prt {
       margin-bottom: 0;
       border-radius: 0;
     }
     
     /* Add a gray background color and some padding to the footer */
-    .prt-footer {
-	  background-color: #f2f2f2;
+    .footer_prt {
+	  background-color: #a2a2f2;
       padding: 25px;
     }
 
 
-	.blog-bg{background-image: url(images/abg7.jpg);}
 
-/* Website Grid */
+/* Website Template Grid */
 /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .web-navbar {
+    .navbar_web {
       margin-bottom: 0;
       border-radius: 0;
     }
@@ -74,14 +76,14 @@ p{ font-family: trebuchet MS, verdana, arial; font-size: 14px; color: #555; }
     .row.content {height: 450px}
     
     /* Set gray background color and 100% height */
-    .web-sidenav {
+    .sidenav_web {
       padding-top: 20px;
       background-color: #f1f1f1;
       height: 100%;
     }
     
     /* Set black background color, white text and some padding */
-    .web-footer {
+    .footer_web {
       background-color: #555;
       color: white;
       padding: 15px;
@@ -89,13 +91,100 @@ p{ font-family: trebuchet MS, verdana, arial; font-size: 14px; color: #555; }
     
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
-      .web-sidenav {
+      .sidenav_web {
         height: auto;
         padding: 15px;
       }
       .row.content {height:auto;} 
     }
 
+/* Social Template Grid */
+/* Set black background color, white text and some padding */
+    .footer_soc {
+      background-color: #55A;
+      color: white;
+      padding: 15px;
+  border-radius: 5px;
+    }
+
+
+/* Marketing Template Grid  */
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar_mkt {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a background color and some padding to the footer */
+    .footer_mkt {
+      background-color: #f2f2a2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+
+/* Marketing 2 Template Grid   */
+    /* Add a background color and some padding to the footer */
+    .footer_mkt2 {
+      background-color: #f2a2f2;
+      padding: 25px;
+    }
+
+    .carousel-inner_mkt2 img {
+      width: 100%; /* Set width to 100% */
+      min-height: 200px;
+    }
+
+    /* Hide the carousel text when the screen is less than 600 pixels wide */
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none; 
+      }
+    }
+
+/* Analytics Template Grid  */
+ /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content.anl {height: 550px; border: 1px solid #f11; border-radius: 3px;}
+    
+    /* Set gray background color and 100% height */
+    .sidenav_anl {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+        
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 767px) {
+      .row.content.anl {height: auto; border: 1px solid #11f;} 
+    } 
+
+/* Online Store Template Grid */
+ /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar_onlstr {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron_onlstr{
+      margin-bottom: 0;
+    }
+   
+    /* Add a background color and some padding to the footer */
+    .footer_onlstr {
+	  background-color: #a2f2f2;
+      padding: 25px;
+    }
 </style>
 <script>
 $(document).ready(function(){
@@ -164,18 +253,21 @@ $(document).ready(function(){
 
 
 </div>
-<button id="tmp_analytics">Analytics</button>
-<button id="tmp_blog">Blog</button>
-<button id="tmp_marketing">Marketing</button>
-<button id="tmp_marketingtwo">Marketing 2</button>
-<button id="tmp_onlinestore">Online Store</button>
-<button id="tmp_portfolio">Portfolio</button>
-<button id="tmp_social">Social</button>
-<button id="tmp_webpage">Web Page</button>
+<br/>
+
+<div class="container">
+<h2>Click on the buttons below to see sample webpage templates.</h2>
+<button id="tmp_analytics" class="btn btn-default">Analytics</button>
+<button id="tmp_blog" class="btn btn-primary">Blog</button>
+<button id="tmp_marketing" class="btn btn-success">Marketing</button>
+<button id="tmp_marketingtwo" class="btn btn-info">Marketing 2</button>
+<button id="tmp_onlinestore" class="btn btn-warning">Online Store</button>
+<button id="tmp_portfolio" class="btn btn-danger">Portfolio</button>
+<button id="tmp_social" class="btn btn-primary">Social</button>
+<button id="tmp_webpage" class="btn btn-success">Web Page</button>
+</div>
 
 <div id="demo"><h2 style="margin: 10px 10px; padding: 10px 10px; background-color: #AAF;">Let AJAX change this text with a sample bootstrap webpage templates from the button choices above using JQuery function.</h2></div>
-
-
 
 
 </body>
