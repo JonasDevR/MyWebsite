@@ -255,11 +255,26 @@ $(document).ready(function(){
 	$("#demo").load("frm_webpage.txt");
     });	
     $("#frm_test").click(function(){
-	//alert("");
-	$("#demo").load("https://public-api.wordpress.com/wpcom/v2/work-with-us");
+	getAjax();
+	;
     });		
 	
 });
+	
+	
+function getAjax(){
+const Http = new XMLHttpRequest();
+const url=' https://public-api.wordpress.com/wpcom/v2/work-with-us';
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("demo").innerHTML = this.responseText;
+    }
+Http.open("GET", url);
+Http.send();
+Http.onreadystatechange=(e)=>{
+console.log(Http.responseText)
+//alert('oy');
+}
+}	
 </script>
 </head>
 <body>
