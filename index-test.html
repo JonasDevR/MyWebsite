@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo"><h2>Let AJAX change this text</h2></div>
+
+<button type="button" onclick="ajaxFunction()">Change Content</button>
+
+<script>
+<!--
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      document.getElementById("demo").innerHTML = xhttp.responseText;
+    }
+  };
+  xhttp.open("GET", "test.txt", true);
+  xhttp.send();
+alert(xhttp.status);
+}
+-->
+</script>
+
+<script language="javascript" type="text/javascript">
+   <!-- 
+   //Browser Support Code
+   function ajaxFunction(){
+      var ajaxRequest;  // The variable that makes Ajax possible!
+
+      try{
+         // Opera 8.0+, Firefox, Safari 
+         ajaxRequest = new XMLHttpRequest();
+
+      }catch (e){
+
+         // Internet Explorer Browsers
+         try{
+            ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP");
+         }catch (e) {
+            try{
+               ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
+
+            }catch (e){
+
+               // Something went wrong
+               alert("Your browser broke!");
+               return false;
+            }
+         }
+      }
+   }
+   //-->
+   </script>
+   
+   <form name='myForm'>
+      Name: <input type='text' name='username' /> <br />
+      Time: <input type='text' name='time' />
+   </form>
+
+</body>
+</html>

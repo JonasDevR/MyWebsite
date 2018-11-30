@@ -1,17 +1,324 @@
-﻿<html>
+﻿<!DOCTYPE html>
+<html lang="en">
 <head><title>JonasDevR Website</title>
-<style>
-body { margin: 20px 20px; }
-h1{ font-family: trebuchet MS, verdana, arial; font-size: 32px; color: #C55; }
-p{ font-family: trebuchet MS, verdana, arial; font-size: 14px; color: #555; }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style>
+body { margin: 0px 0px; }
+h1{ font-family: trebuchet MS, verdana, arial; font-size: 32px; color: #C55; }
+p{ font-family: trebuchet MS, verdana, arial; font-size: 14px;  }
+/*
+.new { font-weight: bold; color: #F00; }
+.bordr {border: 1px dotted #CCC; }
+.margin {padding: 2px 2px;}
+.bg-color{ background-color: #DDD; border: 1px solid #F00;}
+*/
+
+/* Blog Template Grid  */
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav_blg {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    .footer_blg {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav_blg {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+
+
+/* Portfolio Template Grid		*/
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar_prt {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    .footer_prt {
+	  background-color: #a2a2f2;
+      padding: 25px;
+    }
+
+
+
+/* Website Template Grid */
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar_web {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav_web {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    .footer_web {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav_web {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+
+/* Social Template Grid */
+/* Set black background color, white text and some padding */
+    .footer_soc {
+      background-color: #55A;
+      color: white;
+      padding: 15px;
+  border-radius: 5px;
+    }
+
+
+/* Marketing Template Grid  */
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar_mkt {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a background color and some padding to the footer */
+    .footer_mkt {
+      background-color: #f2f2a2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+
+/* Marketing 2 Template Grid   */
+    /* Add a background color and some padding to the footer */
+    .footer_mkt2 {
+      background-color: #f2a2f2;
+      padding: 25px;
+    }
+
+    .carousel-inner_mkt2 img {
+      width: 100%; /* Set width to 100% */
+      min-height: 200px;
+    }
+
+    /* Hide the carousel text when the screen is less than 600 pixels wide */
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none; 
+      }
+    }
+
+/* Analytics Template Grid  */
+ /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content.anl {height: 550px; border: 1px solid #f11; border-radius: 3px;}
+    
+    /* Set gray background color and 100% height */
+    .sidenav_anl {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+        
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 767px) {
+      .row.content.anl {height: auto; border: 1px solid #11f;} 
+    } 
+
+/* Online Store Template Grid */
+ /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar_onlstr {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron_onlstr{
+      margin-bottom: 0;
+    }
+   
+    /* Add a background color and some padding to the footer */
+    .footer_onlstr {
+	  background-color: #a2f2f2;
+      padding: 25px;
+    }
 </style>
+<script>
+$(document).ready(function(){
+    $("#tmp_blog").click(function(){
+	//alert("blog");
+        $("#demo").load("tmp_blog.txt");
+    });
+    $("#tmp_analytics").click(function(){
+	//alert("analytics");
+	$("#demo").load("tmp_analytics.txt");
+    });
+    $("#tmp_marketing").click(function(){
+	//alert("");
+	$("#demo").load("tmp_marketing.txt");
+    });
+    $("#tmp_marketingtwo").click(function(){
+	//alert("");
+	$("#demo").load("tmp_marketing2.txt");
+    });
+    $("#tmp_onlinestore").click(function(){
+	//alert("");
+	$("#demo").load("tmp_onlinestore.txt");
+    });
+    $("#tmp_portfolio").click(function(){
+	//alert("");
+	$("#demo").load("tmp_portfolio.txt");
+    });
+    $("#tmp_social").click(function(){
+	//alert("");
+	$("#demo").load("tmp_social.txt");
+    });
+    $("#tmp_webpage").click(function(){
+	//alert("");
+	$("#demo").load("tmp_webpage.txt");
+    });
+	
+	
+    $("#frm_blog").click(function(){
+	//alert("blog");
+        $("#demo").load("frm_blog.txt");
+    });
+    $("#frm_analytics").click(function(){
+	//alert("analytics");
+	$("#demo").load("frm_analytics.txt");
+    });
+    $("#frm_marketing").click(function(){
+	//alert("");
+	$("#demo").load("frm_marketing.txt");
+    });
+    $("#frm_marketingtwo").click(function(){
+	//alert("");
+	$("#demo").load("frm_marketing2.txt");
+    });
+    $("#frm_onlinestore").click(function(){
+	//alert("");
+	$("#demo").load("frm_onlinestore.txt");
+    });
+    $("#frm_portfolio").click(function(){
+	//alert("");
+	$("#demo").load("frm_portfolio.txt");
+    });
+    $("#frm_social").click(function(){
+	//alert("");
+	$("#demo").load("frm_social.txt");
+    });
+    $("#frm_webpage").click(function(){
+	//alert("");
+	$("#demo").load("frm_webpage.txt");
+    });	
+    $("#frm_test").click(function(){
+	//alert("");
+	$("#demo").load("https://public-api.wordpress.com/wpcom/v2/work-with-us");
+    });		
+	
+});
+</script>
 </head>
 <body>
+
+<div class="container-fluid">
+
 <h1>Hello World!</h1>
-
+<p>New Update...time to revamp this website...year 2017.</p>
 <p>Hello World Wide Web! Hello Github! This is my first html file sent to the GitHub repository.</p>
+<p>Hopefully this website will showcase my skills with web development.  I will be implementing current technologies and trends with this website such as using the Bootstrap framework and Parallax.  I will also try to dive in and incorporate JQuery and Angular JS as I learn those coding methodologies.  I'm also getting into the HTML5 mindset of web development and CSS3.  I wish myself luck and force myself to get to work!</p>
 
-<p>This is another paragraph added to check if the file is updated from local to the Git Hub web account.</p>
+<p >Now that I have set up the web view of the website.  I am now attempting to make changes and edits to the website.</p>
+
+<h2>Checking out the Bootstrap Grid System</h2>
+<div class="row">
+	<div class="col-sm-4 bordr">col-sm-4</div>
+	<div class="col-sm-4 bordr">col-sm-4</div>
+	<div class="col-sm-4 bordr">col-sm-4</div>
+</div>
+<div class="row">
+	<div class="col-sm-3 bordr">col-sm-3</div>
+	<div class="col-sm-3 bordr">col-sm-3</div>
+	<div class="col-sm-3 bordr">col-sm-3</div>
+</div>
+<div class="row">
+	<div class="col-xs-2 bordr">col-sm-2</div>
+	<div class="col-xs-2 bordr">col-sm-2</div>
+	<div class="col-xs-2 bordr">col-sm-2</div>
+</div>
+
+
+
+</div>
+<br/>
+
+<div class="container">
+<h2>Click on the buttons below to see sample webpage templates.</h2>
+<p>Check out the sample webpage templates as they are pulled into the blue box area below using AJAX via JQuery simplified function.</p><br/>
+<button id="tmp_analytics" class="btn btn-default">Analytics</button>
+<button id="tmp_blog" class="btn btn-primary">Blog</button>
+<button id="tmp_marketing" class="btn btn-success">Marketing</button>
+<button id="tmp_marketingtwo" class="btn btn-info">Marketing 2</button>
+<button id="tmp_onlinestore" class="btn btn-warning">Online Store</button>
+<button id="tmp_portfolio" class="btn btn-danger">Portfolio</button>
+<button id="tmp_social" class="btn btn-primary">Social</button>
+<button id="tmp_webpage" class="btn btn-success">Web Page</button>
+<p>For the Empty Content templates webpages.</p>
+<button id="frm_analytics" class="btn btn-default">Analytics</button>
+<button id="frm_blog" class="btn btn-primary">Blog</button>
+<button id="frm_marketing" class="btn btn-success">Marketing</button>
+<button id="frm_marketingtwo" class="btn btn-info">Marketing 2</button>
+<button id="frm_onlinestore" class="btn btn-warning">Online Store</button>
+<button id="frm_portfolio" class="btn btn-danger">Portfolio</button>
+<button id="frm_social" class="btn btn-primary">Social</button>
+<button id="frm_webpage" class="btn btn-success">Web Page</button>
+	<button id="frm_test" class="btn btn-success">Test</button>
+</div>
+<br/>
+<div id="demo"><h2 style="margin: 10px 10px; padding: 10px 10px; background-color: #AAF;"><br/><br/><br/>This is the <em>"Blue Box Area"</em> that will be replaced with the webpage template samples as indicated by clicking the buttons above.<br/><br/><br/></h2></div>
+
 </body>
 </html>

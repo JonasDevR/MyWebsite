@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head><title>JonasDevR Website</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style>
+body { margin: 0px 0px; }
+h1{ font-family: trebuchet MS, verdana, arial; font-size: 32px; color: #C55; }
+p{ font-family: trebuchet MS, verdana, arial; font-size: 14px; color: #555; }
+.new { font-weight: bold; color: #F00; }
+.bordr {border: 1px dotted #CCC; }
+.margin {padding: 2px 2px;}
+.bg-color{ background-color: #DDD; border: 1px solid #F00;}
+
+/* Styles for Blog Grid  */
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+
+
+/* 	Portfolio Grid		*/
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+    .prt-navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    .prt-footer {
+	  background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+
+	.blog-bg{background-image: url(images/abg7.jpg);}
+
+/* Website Grid */
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+    .web-navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .web-sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    .web-footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .web-sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container-fluid">
+
+<h1>Hello World!</h1>
+<p>Hello World Wide Web! Hello Github! This is my first html file sent to the GitHub repository.</p>
+<p>Hopefully this website will showcase my skills with web development.  I will be implementing current technologies and trends with this website such as using the Bootstrap framework and Parallax.  I will also try to dive in and incorporate JQuery and Angular JS as I learn those coding methodologies.  I'm also getting into the HTML5 mindset of web development and CSS3.  I wish myself luck and force myself to get to work!</p>
+
+<p >Now that I have set up the web view of the website.  I am now attempting to make changes and edits to the website.</p>
+
+<h2>Checking out the Bootstrap Grid System</h2>
+<div class="row">
+	<div class="col-sm-4 bordr">col-sm-4</div>
+	<div class="col-sm-4 bordr">col-sm-4</div>
+	<div class="col-sm-4 bordr">col-sm-4</div>
+</div>
+<div class="row">
+	<div class="col-sm-3 bordr">col-sm-3</div>
+	<div class="col-sm-3 bordr">col-sm-3</div>
+	<div class="col-sm-3 bordr">col-sm-3</div>
+</div>
+<div class="row">
+	<div class="col-xs-2 bordr">col-sm-2</div>
+	<div class="col-xs-2 bordr">col-sm-2</div>
+	<div class="col-xs-2 bordr">col-sm-2</div>
+</div>
+
+
+
+</div>
+
+
+
+
+</body>
+</html>
